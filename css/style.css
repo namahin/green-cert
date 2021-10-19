@@ -5,3 +5,208 @@
     outline: 0;
     font-family: 'Poppins', 'Noto Sans Bengali', sans-serif;
 }
+
+:root {
+    --color-primary: #006838;
+    --color-secondary: #39B54A;
+    --color-text: #222020;
+    --color-title: #010c09;
+    --color-white: #ffffff;
+    --background-light: #10ac840d;
+    --background-dark: #1D2026;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+thead,
+tbody,
+tfoot,
+td,
+th,
+tr {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: var(--color-text);
+    font-family: 'Poppins', 'Noto Sans Bengali', sans-serif;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: var(--color-title);
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 65px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: linear .3s;
+}
+
+a:hover {
+    color: var(--color-secondary);
+}
+
+.btn-theme {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    padding: 15px 22px;
+    transition: linear .3s;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn-theme:hover {
+    color: var(--color-white);
+    background-color: var(--color-secondary);
+}
+
+.btn-theme:focus {
+    box-shadow: 0px 0px 0px 3px var(--background-light);
+}
+
+.btn-theme-outer {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    padding: 14px 21px;
+}
+
+.btn-theme-outer:hover {
+    border-color: var(--color-secondary);
+}
+
+
+
+/* ***************************************************** */
+/* 1. Home Page */
+/* ***************************************************** */
+/* hero section */
+.hero-sec {
+    background-image: url(../images/hero-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 200px 0;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: var(--color-white);
+    text-shadow: 3px 2px 0 var(--color-text);
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    margin-right: 140px;
+    color: var(--color-white);
+}
+
+.hero-content ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.hero-content ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.hero-content ul li a {}
+
+
+/* services section */
+.services-sec{
+    padding: 100px 0;
+}
+.service-card {
+    position: relative;
+    background: #ffffff80;
+    box-shadow: 0 0 0 1px #10ac841a;
+    transition: linear .2s;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.service-card:hover {
+    background: #FFFFFF;
+    box-shadow: 10px 15px 50px #00000014;
+    transition: linear .2s;
+}
+
+.service-card-body {
+    padding: 30px;
+}
+
+.service-card img {
+    width: 100%;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    line-height: 32px;
+
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    margin-bottom: 15px;
+}
+
+.service-card a {
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.service-card:hover a {
+    color: var(--color-primary);
+}
+
+.service-card a i {
+    margin-left: 5px;
+    transition: linear .3s;
+}
+
+.service-card:hover a i{
+    margin-left: 8px;
+    transition: linear .3s;
+}

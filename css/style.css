@@ -63,6 +63,10 @@ h3 {
     line-height: 32px;
 }
 
+.sec-title h3 {
+    font-size: 32px;
+}
+
 a {
     text-decoration: none;
     color: var(--color-primary);
@@ -70,7 +74,8 @@ a {
 }
 
 a:hover,
-a:hover * {
+a:hover *,
+a:focus {
     color: var(--color-primary);
     transition: linear .3s;
 }
@@ -157,24 +162,41 @@ header .navbar-brand img {
 
 /* hero section */
 .hero-sec {
-    background-image: url(../images/hero-3.jpg);
+    background-image: url(../images/hero.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
     background-size: cover;
-    padding: 200px 0;
+    padding-top: 400px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.hero-sec::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, #ffffff 0%, #00000000 100%);
 }
 
 .hero-content {
     max-width: 850px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-content h1 {
     font-size: 60px;
-    line-height: 80px;
+    line-height: 72px;
     font-weight: 600;
     margin-bottom: 30px;
-    color: var(--color-white);
-    text-shadow: 3px 2px 0 var(--color-text);
+    color: var(--color-primary);
+    text-shadow: 3px 2px 0 var(--color-white);
+    text-transform: capitalize;
 }
 
 .hero-content p {
@@ -182,8 +204,7 @@ header .navbar-brand img {
     line-height: 32px;
     font-weight: 400;
     margin-bottom: 50px;
-    margin-right: 140px;
-    color: var(--color-white);
+    color: var(--color-text);
 }
 
 .hero-content ul {
@@ -274,6 +295,14 @@ header .navbar-brand img {
     margin-left: 50px;
 }
 
+.about-content p {
+    margin-bottom: 10px;
+}
+
+.about-content p:last-of-type {
+    margin-bottom: 48px;
+}
+
 /* CTA section */
 .cta-sec {
     position: relative;
@@ -360,7 +389,7 @@ header .navbar-brand img {
     margin: 0;
     position: absolute;
     width: auto;
-    bottom: -30px;
+    bottom: -50px;
     right: auto;
 }
 
@@ -378,6 +407,12 @@ header .navbar-brand img {
     background-color: var(--color-primary);
     opacity: .8;
 }
+
+.clients-feedback-slider .carousel-item p {
+    margin-bottom: 10px;
+}
+
+
 
 /* Blog & News section */
 .blog-sec {
@@ -520,4 +555,190 @@ header .navbar-brand img {
 
 .copyright p a:hover {
     opacity: 1;
+}
+
+/* ***************************************************** */
+/* 2. About Page */
+/* ***************************************************** */
+/* title section */
+.title-sec {
+    position: relative;
+    padding: 100px 0;
+    background-image: url(../images/cta-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.title-sec::before {
+    content: "";
+    position: absolute;
+    background-color: #000000b8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.title-content {
+    position: relative;
+    z-index: 1;
+}
+
+.title-content * {
+    color: var(--color-white);
+}
+
+.title-sec h1 {
+    font-size: 50px;
+    line-height: 65px;
+    margin-bottom: 15px;
+}
+
+.title-sec .breadcrumb {
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+/* title section end */
+
+/* Owner Content */
+.about-content.owner {
+    margin-left: 0;
+    margin-right: 50px;
+}
+
+/* Owner Content end */
+/* Team Member section */
+.team-sec {
+    padding: 100px 0;
+}
+
+.team-card {
+    margin-bottom: 30px;
+}
+
+.team-card img {
+    margin-bottom: 30px;
+}
+
+.team-card h3 {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.team-card h4 {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--color-text);
+    opacity: .5;
+    margin-bottom: 10px;
+}
+
+.team-card ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.team-card ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.team-card ul li a {
+    opacity: .5;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 8px;
+    background-color: var(--color-text);
+    height: 26px;
+    width: 26px;
+    display: block;
+    border-radius: 3px;
+    position: relative;
+}
+
+.team-card ul li a:hover {
+    opacity: 1;
+    background-color: var(--color-primary);
+}
+
+.team-card ul li a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-white);
+}
+
+/* Team Member section end */
+/* ***************************************************** */
+/* 3. Contact Page */
+/* ***************************************************** */
+.contact-sec {
+    padding: 100px 0;
+}
+
+.contact-form {}
+
+.contact-form form {}
+
+.contact-form form input {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.contact-form form textarea {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.contact-form form button {
+    width: 100%;
+}
+
+.contact-box {
+    margin-bottom: 30px;
+    display: table;
+    width: 100%;
+}
+
+.contact-box .icon {
+    width: 52px;
+    display: table-cell;
+    vertical-align: top;
+    text-align: center;
+    padding-right: 30px;
+}
+
+.contact-box .icon i {
+    font-size: 22px;
+    color: var(--color-primary);
+}
+
+.contact-box .text {}
+
+.contact-box .text .title {
+    font-size: 20px;
+    color: var(--color-title);
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.contact-box .text .info p {
+    line-height: 22px;
+}
+
+.contact-box .text .info p a {
+    color: var(--color-text);
 }

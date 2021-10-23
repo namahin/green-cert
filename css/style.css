@@ -16,6 +16,11 @@
     --background-dark: #1D2026;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 p,
 h1,
 h2,
@@ -64,8 +69,14 @@ a {
     transition: linear .3s;
 }
 
-a:hover {
-    color: var(--color-secondary);
+a:hover,
+a:hover * {
+    color: var(--color-primary);
+    transition: linear .3s;
+}
+
+img {
+    max-width: 100%;
 }
 
 .btn-theme {
@@ -101,11 +112,49 @@ a:hover {
     border-color: var(--color-secondary);
 }
 
-
+.bg-light {
+    background-color: var(--background-light);
+}
 
 /* ***************************************************** */
 /* 1. Home Page */
 /* ***************************************************** */
+/* header */
+header {}
+
+header .navbar-toggler {
+    border: 1px solid var(--color-primary);
+}
+
+header .navbar-toggler i {
+    color: var(--color-primary);
+}
+
+header .navbar-nav {
+    margin-right: 30px;
+}
+
+header .navbar-nav li {
+    margin-right: 30px;
+}
+
+header .navbar-nav li a {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    color: var(--color-text);
+}
+
+header .navbar-nav li a:hover,
+header .navbar-nav li a.active {
+    color: var(--color-primary);
+}
+
+header .navbar-brand {}
+
+header .navbar-brand img {
+    width: 220px;
+}
+
 /* hero section */
 .hero-sec {
     background-image: url(../images/hero-3.jpg);
@@ -152,16 +201,17 @@ a:hover {
 
 
 /* services section */
-.services-sec{
+.services-sec {
     padding: 100px 0;
+    padding-bottom: 70px;
 }
+
 .service-card {
     position: relative;
     background: #ffffff80;
     box-shadow: 0 0 0 1px #10ac841a;
     transition: linear .2s;
     box-sizing: border-box;
-    border-radius: 10px;
     margin-bottom: 30px;
     overflow: hidden;
     z-index: 1;
@@ -206,7 +256,268 @@ a:hover {
     transition: linear .3s;
 }
 
-.service-card:hover a i{
+.service-card:hover a i {
     margin-left: 8px;
     transition: linear .3s;
+}
+
+/* about section */
+.about-sec {
+    padding: 100px 0;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about-content {
+    margin-left: 50px;
+}
+
+/* CTA section */
+.cta-sec {
+    position: relative;
+    padding: 100px 0;
+    background-image: url(../images/cta-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.cta-sec::before {
+    content: "";
+    position: absolute;
+    background-color: #000000b8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-content .sec-title h2 {
+    color: var(--color-white);
+}
+
+.cta-content p {
+    color: var(--color-white);
+}
+
+.cta-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cta-content ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.cta-content ul li:last-child {
+    margin-right: 0;
+}
+
+/* clients section */
+.clients-sec {
+    padding: 100px 0;
+}
+
+.clients-img img {
+    width: 100%;
+}
+
+/* clients feedback section */
+.clients-feedback-sec {
+    padding: 100px 0;
+}
+
+.clients-feedback-img-group {}
+
+.clients-feedback-img-group ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clients-feedback-img-group ul li {
+    flex: 0 0 auto;
+    width: 25%;
+}
+
+.clients-feedback-slider {
+    margin-left: 50px;
+}
+
+.clients-feedback-slider .carousel-indicators {
+    margin: 0;
+    position: absolute;
+    width: auto;
+    bottom: -30px;
+    right: auto;
+}
+
+.clients-feedback-slider .carousel-indicators button {
+    background-color: var(--color-primary);
+    height: 5px;
+    border-radius: 10px;
+    padding: 0;
+    border: 0;
+    opacity: .2;
+    width: 25px;
+}
+
+.clients-feedback-slider .carousel-indicators button.active {
+    background-color: var(--color-primary);
+    opacity: .8;
+}
+
+/* Blog & News section */
+.blog-sec {
+    padding: 100px 0;
+}
+
+.card-blog {
+    margin-bottom: 30px;
+}
+
+.card-blog img {
+    margin-bottom: 30px;
+    transition: linear .2s;
+    box-shadow: none;
+}
+
+.card-blog h3 {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -moz-line-clamp: 2;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.card-blog:hover img {
+    transition: linear .2s;
+    box-shadow: 10px 15px 50px #00000014;
+}
+
+/* footer */
+.footer-sec {
+    position: relative;
+    padding: 150px 0 50px;
+    color: #fff;
+    background: #1B1E1A;
+}
+
+
+.footer-widget h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-widget ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    column-count: 2;
+}
+
+
+.footer-widget ul li a {
+    font-size: 14px;
+    display: block;
+    padding: 8px 0;
+    color: var(--color-white);
+    opacity: .5;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.footer-widget ul li a:hover {
+    color: #fffffff2;
+    opacity: 1;
+}
+
+.footer-bottom {
+    border-bottom: 1px solid #ffffff40;
+    padding: 70px 0 50px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+.footer-contact {
+    margin: 0 5px;
+    font-weight: 500;
+    text-align: left;
+    color: var(--color-white);
+}
+
+
+.footer-contact a {
+    color: #FFC641;
+}
+
+.footer-contact a:hover {
+    color: var(--color-white);
+}
+
+.footer-social {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-social li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.footer-social li a {
+    background-color: #111311;
+    color: var(--color-white);
+    opacity: .8;
+    font-size: 16px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social li a:hover,
+.footer-social li a:hover * {
+    color: var(--color-white);
+    background-color: #0d0e0d;
+    opacity: 1;
+}
+
+.copyright p {
+    font-size: 14px;
+    color: var(--color-white);
+    opacity: .5;
+    margin: 0;
+    font-weight: 400;
+}
+
+.copyright p a {
+    color: var(--color-white);
+    opacity: .5;
+}
+
+.copyright p a:hover {
+    opacity: 1;
 }

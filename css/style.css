@@ -239,12 +239,14 @@ header .navbar-brand img {
     margin-bottom: 30px;
     overflow: hidden;
     z-index: 1;
+    top: 0;
 }
 
 .service-card:hover {
     background: #FFFFFF;
     box-shadow: 10px 15px 50px #00000014;
     transition: linear .2s;
+    top: -10px;
 }
 
 .service-card-body {

@@ -441,7 +441,7 @@ header .navbar-nav li.dropdown .dropdown-menu .dropdown-item::before {
     margin-left: 50px;
 }
 
-.clients-feedback-slider .carousel-indicators {
+/* .clients-feedback-slider .carousel-indicators {
     margin: 0;
     position: absolute;
     width: auto;
@@ -462,12 +462,40 @@ header .navbar-nav li.dropdown .dropdown-menu .dropdown-item::before {
 .clients-feedback-slider .carousel-indicators button.active {
     background-color: var(--color-primary);
     opacity: .8;
-}
+} */
 
 .clients-feedback-slider .carousel-item p {
     margin-bottom: 10px;
 }
 
+.clients-feedback-slider {}
+
+.clients-feedback-slider button {
+    top: auto;
+    height: 40px;
+    width: 40px;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
+    opacity: 1;
+    bottom: -60px;
+    transition: linear .2s;
+}
+
+.clients-feedback-slider button span {
+    width: 70%;
+    height: 70%;
+    background-size: 75%;
+}
+
+.clients-feedback-slider button:hover {
+    background-color: var(--color-primary);
+    transition: linear .2s;
+}
+
+.clients-feedback-slider .carousel-control-next {
+    right: auto;
+    left: 60px;
+}
 
 
 /* Blog & News section */

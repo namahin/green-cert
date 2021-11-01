@@ -214,6 +214,30 @@ header .navbar-nav li.dropdown .dropdown-menu .dropdown-item::before {
     content: none;
 }
 
+.search-box {}
+
+.search-box form {
+    width: 255px;
+    position: relative;
+}
+
+.search-box form input {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.search-box form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    border-radius: 6px 0px 0px 6px;
+}
+
 /* hero section */
 .hero-sec {
     background-image: url(../images/hero.jpg);

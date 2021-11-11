@@ -193,13 +193,9 @@ header .navbar-nav li a.active::before {
     transition: linear .2s;
 }
 
-header .navbar-brand {}
-
 header .navbar-brand img {
     width: 220px;
 }
-
-header .navbar-nav li.dropdown {}
 
 header .navbar-nav li.dropdown .dropdown-menu {
     padding: 0;
@@ -222,8 +218,6 @@ header .navbar-nav li.dropdown .dropdown-menu .dropdown-item:hover {
 header .navbar-nav li.dropdown .dropdown-menu .dropdown-item::before {
     content: none;
 }
-
-.search-box {}
 
 .search-box form {
     width: 255px;
@@ -308,8 +302,6 @@ header .navbar-nav li.dropdown .dropdown-menu .dropdown-item::before {
 .hero-content ul li:last-child {
     margin-right: 0;
 }
-
-.hero-content ul li a {}
 
 
 /* services section */
@@ -459,8 +451,6 @@ header .navbar-nav li.dropdown .dropdown-menu .dropdown-item::before {
     padding: 100px 0;
 }
 
-.clients-feedback-img-group {}
-
 .clients-feedback-img-group ul {
     margin: 0;
     padding: 0;
@@ -539,10 +529,6 @@ header .navbar-nav li.dropdown .dropdown-menu .dropdown-item::before {
     padding: 100px 0;
 }
 
-.blog-sec .pagination {}
-
-.blog-sec .pagination li {}
-
 .blog-sec .pagination li a {
     border-color: var(--color-white);
     font-size: 16px;
@@ -560,8 +546,6 @@ header .navbar-nav li.dropdown .dropdown-menu .dropdown-item::before {
 .blog-sec .pagination li a:hover {
     background-color: var(--color-secondary);
 }
-
-.blog-sec .pagination li a i {}
 
 .card-blog {
     margin-bottom: 30px;
@@ -832,10 +816,6 @@ header .navbar-nav li.dropdown .dropdown-menu .dropdown-item::before {
     padding: 100px 0;
 }
 
-.contact-form {}
-
-.contact-form form {}
-
 .contact-form form input {
     font-size: 16px;
     line-height: 22px;
@@ -886,8 +866,6 @@ header .navbar-nav li.dropdown .dropdown-menu .dropdown-item::before {
     color: var(--color-primary);
 }
 
-.contact-box .text {}
-
 .contact-box .text .title {
     font-size: 20px;
     color: var(--color-title);
@@ -913,8 +891,6 @@ header .navbar-nav li.dropdown .dropdown-menu .dropdown-item::before {
     padding-bottom: 100px;
     padding-top: 65px;
 }
-
-.blog-details {}
 
 .blog-details img {
     width: 100%;

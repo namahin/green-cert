@@ -121,13 +121,16 @@
 
 /* `xs` returns only a ruleset and no media query */
 @media (max-width: 390.98px) {
-    .hero-content ul li {
+
+    .hero-content ul li,
+    .cta-content ul li {
         display: block;
         margin-right: 0;
         margin-bottom: 15px;
     }
 
-    .hero-content ul li:last-child {
+    .hero-content ul li:last-child,
+    .cta-content ul li:last-child {
         margin-bottom: 0;
     }
 }

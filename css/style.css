@@ -648,7 +648,9 @@ header .navbar-nav li.dropdown .dropdown-menu .dropdown-item::before {
     display: inline-block;
     margin-left: 15px;
 }
-
+.footer-social li:first-child{
+    margin-left: 0;
+}
 .footer-social li a {
     background-color: #111311;
     color: var(--color-white);

@@ -1,0 +1,133 @@
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    header .navbar-nav {
+        margin-right: 20px;
+    }
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .card-blog h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .about-content {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .clients-feedback-slider {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    header .navbar-nav li a:hover,
+    header .navbar-nav li a.active {
+        background: linear-gradient(-90deg, #fff0 0%, #10ac840d 100%);
+    }
+
+    header .navbar-nav li a::before {
+        bottom: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        border-radius: 0px 10px 10px 0;
+    }
+
+    header .navbar-nav li a {
+        padding: 14px 20px !important;
+    }
+
+    header .navbar-nav {
+        margin: 0;
+        padding-top: 20px;
+    }
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    h2 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .hero-sec {
+        padding-top: 250px;
+        padding-bottom: 60px;
+    }
+
+    .about-sec {
+        padding: 60px 0;
+    }
+
+    .services-sec {
+        padding: 60px 0;
+    }
+
+    .clients-sec {
+        padding: 60px 0;
+    }
+
+    .clients-feedback-sec {
+        padding: 60px 0;
+    }
+
+    .blog-sec {
+        padding: 60px 0;
+    }
+
+    .footer-logo {
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    footer * {
+        text-align: center;
+    }
+
+    .footer-contact {
+        text-align: center !important;
+    }
+
+    .footer-widget h4 {
+        margin-bottom: 0;
+    }
+
+    .footer-social {
+        margin-top: 40px;
+    }
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* `xs` returns only a ruleset and no media query */
+@media (max-width: 390.98px) {
+    .hero-content ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .hero-content ul li:last-child {
+        margin-bottom: 0;
+    }
+}

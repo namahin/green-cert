@@ -120,7 +120,10 @@ img {
 .btn-theme-outer:hover {
     border-color: var(--color-secondary);
 }
-
+.btn-theme-outer:focus{
+    color: var(--color-primary) !important;
+    background-color: var(--color-white);
+}
 .bg-light {
     background-color: var(--background-light);
 }

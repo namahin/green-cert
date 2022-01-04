@@ -120,10 +120,12 @@ img {
 .btn-theme-outer:hover {
     border-color: var(--color-secondary);
 }
-.btn-theme-outer:focus{
+
+.btn-theme-outer:focus {
     color: var(--color-primary) !important;
     background-color: var(--color-white);
 }
+
 .bg-light {
     background-color: var(--background-light);
 }
@@ -311,6 +313,10 @@ header .navbar-nav li.dropdown .dropdown-menu .dropdown-item::before {
 .services-sec {
     padding: 100px 0;
     padding-bottom: 70px;
+    background-image: url(../images/services-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
 }
 
 .service-card {
@@ -648,9 +654,11 @@ header .navbar-nav li.dropdown .dropdown-menu .dropdown-item::before {
     display: inline-block;
     margin-left: 15px;
 }
-.footer-social li:first-child{
+
+.footer-social li:first-child {
     margin-left: 0;
 }
+
 .footer-social li a {
     background-color: #111311;
     color: var(--color-white);
@@ -811,6 +819,27 @@ header .navbar-nav li.dropdown .dropdown-menu .dropdown-item::before {
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--color-white);
+}
+
+.team-bio {
+    margin-top: 10px;
+}
+
+.team-bio button {
+    border: none;
+    background-color: #F8F9FA;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 3px;
+    justify-content: space-between;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.team-bio article {
+    padding-top: 15px;
 }
 
 /* Team Member section end */

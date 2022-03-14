@@ -948,3 +948,54 @@ header .navbar-nav li.dropdown .dropdown-menu .dropdown-item::before {
 .single-page-text-area {
     padding: 100px 0;
 }
+
+.industry-sec {
+    position: relative;
+    padding: 100px 0;
+    padding-bottom: 70px;
+    background-image: url(../images/cta-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.industry-sec::after {
+    content: "";
+    position: absolute;
+    background-color: #000000b8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.industry-sec .sec-title * {
+    color: var(--color-white);
+    text-align: center;
+}
+.industry-content{
+    position: relative;
+    z-index: 1;
+}
+.industry-card {
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    top: 0;
+    transition: linear .3s;
+}
+.industry-card:hover{
+    top: -10px;
+}
+.industry-card img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.industry-card h3 {
+    color: var(--color-white);
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+}

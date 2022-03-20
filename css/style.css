@@ -224,6 +224,26 @@ header .navbar-nav li.dropdown .dropdown-menu .dropdown-item::before {
     content: none;
 }
 
+.dropdown-menu li {
+    position: relative;
+}
+
+.dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}
+
+.dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+}
+
+.dropdown-menu>li:hover>.dropdown-submenu {
+    display: block;
+}
+
 .search-box form {
     width: 255px;
     position: relative;
@@ -973,10 +993,12 @@ header .navbar-nav li.dropdown .dropdown-menu .dropdown-item::before {
     color: var(--color-white);
     text-align: center;
 }
-.industry-content{
+
+.industry-content {
     position: relative;
     z-index: 1;
 }
+
 .industry-card {
     display: block;
     margin-bottom: 30px;
@@ -985,9 +1007,11 @@ header .navbar-nav li.dropdown .dropdown-menu .dropdown-item::before {
     top: 0;
     transition: linear .3s;
 }
-.industry-card:hover{
+
+.industry-card:hover {
     top: -10px;
 }
+
 .industry-card img {
     width: 100%;
     margin-bottom: 15px;
